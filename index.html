@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .circle {
+        height: 50px;
+        background-color: slategray;
+        width: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation-name: jumpAround;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes jumpAround {
+        0% {
+          transform: translateY(150px);
+          height: 20px;
+        }
+        10% {
+          transform: translateY(-150px);
+          height: 50px;
+        }
+        20% {
+          transform: translateY(100px);
+          height: 20px;
+        }
+        30% {
+          transform: translateY(-150px);
+          height: 50px;
+        }
+        40% {
+          transform: translateY(70px);
+          height: 25px;
+        }
+        50% {
+          transform: translateY(-150px);
+          height: 50px;
+        }
+        60% {
+          transform: translateY(45px);
+          height: 35px;
+        }
+        70% {
+          transform: translateY(-150px);
+          height: 50px;
+        }
+        80% {
+          transform: translateY(30px);
+          height: 40px;
+        }
+        90% {
+          transform: translateY(-150px);
+          height: 50px;
+        }
+        100% {
+          transform: translateY(20px);
+          height: 40px;
+        }
+
+        /* from {
+          background-color: turquoise;
+        }
+        to {
+          background-color: indigo;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Look for transform properties and these are the funniest ones to animate
+    </h1>
+    <nav>
+      <a href="#">Home</a>
+    </nav>
+
+    <section>
+      <h1>This would be the body</h1>
+    </section>
+
+    <div class="circle"></div>
+  </body>
+</html>
